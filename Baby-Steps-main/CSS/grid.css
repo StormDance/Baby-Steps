@@ -1,8 +1,10 @@
 body {
-    height: 100vh;
+    height: 110vh;
     width: 100vw; 
     margin: 0;
+    font-size: 16px;
 }
+
 
 .gridcontainer {
     height: 97%;
@@ -24,13 +26,13 @@ body {
 .sidenav {
     background-color: #ae32e3;
     padding: 15px;
-    box-shadow: 3px 5px 3px 2px #43a047;
+    box-shadow: 3px 5px 7px 2px #1a0957;
     z-index: 10;
-
+    background-image: url(../Practice\ Image.jpg);
 }
 
 .footer {
-    background-color: cadetblue;
+    background-color: rgb(65, 30, 145);
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -38,22 +40,23 @@ body {
 }
 
 .Center {
-    background-color: #43a047;
+    background-color: #79049c;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:3;
-    box-shadow: 5px 10px 5px 05px;
-    z-index: 10;
+    padding: 13px;
+    overflow: auto;
+
 }
 .left {
     background-color: #32e3da;
-    box-shadow: 0px -3px 0px -3px #43a047;
+    box-shadow: -3px -2px -6px -3px #1a0957;
     z-index: 10;
 }
 .right {
     background-color:#32e3da;
-    box-shadow: 0px 3px 0px 3px #43a047;
+    box-shadow: 3px 2px 6px 3px #1a0957;
     z-index: 10;
 }
 h1 { 
@@ -63,4 +66,48 @@ h1 {
 a {
     color:burlywood;
     display: block;
+}
+
+.card {
+    background-color: #32e3da;
+    box-shadow: 0px 5px 6px 3px rgb(42, 7, 66) ;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+img {
+    float: left;
+    height: 115px;
+    border-radius: 3px ;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 3px;
+    font-size: 1.1em;
+}
+@media only screen and (max-width: 600px) {
+
+    .gridcontainer {
+        grid-template-columns: 100%;
+        grid-template-rows: 14vh;
+     }
+     .gridcontainer div{
+         grid-column-start: 1 ;
+         grid-column-end: 2 ;
+     }
+     .footer {
+         grid-row-start: 4 ;
+         grid-row-end: 5 ;
+     }
+     .right {
+         display: none;
+     }
+}
+@media only screen and (max-width: 250px) {
+    img {
+        max-width: 90%;
+        height:auto;
+    }
 }
