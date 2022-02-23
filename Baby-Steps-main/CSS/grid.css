@@ -78,14 +78,20 @@ a {
 
 img {
     float: left;
-    height: 115px;
+    height: 149px;
     border-radius: 3px ;
     margin-right: 5px;
 }
 
 button {
-    margin-top: 3px;
-    font-size: 1.1em;
+    margin-top: 2px;
+    font-size: 0.9em;
+}
+#HamburgerMenu {
+    float:right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    fill:aqua;
 }
 @media only screen and (max-width: 600px) {
 
@@ -104,6 +110,13 @@ button {
      .right {
          display: none;
      }
+     #HamburgerMenu {
+        float:right;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        fill:aqua;
+    }
+     
 }
 @media only screen and (max-width: 250px) {
     img {
